@@ -42,7 +42,7 @@
 
     .certi-item {
         width: 100%;
-        max-width: 350px; /* Ensures max size for mobile */
+        max-width: 350px;
     }
 }
 .certi-caption {
