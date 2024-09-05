@@ -1,0 +1,92 @@
+.skill {
+    margin-top: 50px; /* Add space at the top. Adjust the value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Set to auto if you want the component's height to adjust based on content */
+    /* background-color: #f0f4f8; */
+  }
+  
+  #skill {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .SKILLS {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .skillsin {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill-item ul {
+    list-style: none;
+  }
+  
+  .skill-item ul li {
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #e8f5e9;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .skill-item ul li h2 {
+    color: #2e7d32;
+    position: relative;
+  }
+  
+  .skill-percentage {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .skill-item ul li:hover .skill-percentage {
+    opacity: 1;
+  }
+  
+  .skill-item ul li:hover {
+    background-color: #c8e6c9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    #skill {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .SKILLS {
+      font-size: 1.8rem;
+    }
+  
+    .skill-item ul li {
+      font-size: 1.2rem;
+    }
+  }
+  

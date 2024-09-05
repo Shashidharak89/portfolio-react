@@ -1,0 +1,58 @@
+/* Basic container styling */
+.certi {
+    padding: 20px;
+    display: flex;
+    color: #480505;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-decoration: underline; */
+    color: #480505;
+}
+
+/* Flex container for the certificates */
+.c {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+
+/* Individual certificate item */
+.certi-item {
+    width: 400px;
+    height: 330px;
+    flex-shrink: 0;
+}
+
+.certi-item img {
+    width: 400px;
+    height: 330px;
+    border-radius: 4px; /* Optional: Add some rounding to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Image shadow */
+    border: 2px solid black;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .c {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certi-item {
+        width: 100%;
+        max-width: 350px; /* Ensures max size for mobile */
+    }
+}
+.certi-caption {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: red;
+}
